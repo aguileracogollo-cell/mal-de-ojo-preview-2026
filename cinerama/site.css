@@ -17,3 +17,27 @@
 
 .project-card-primary{border:2px solid var(--pink)}.project-card-primary>.eyebrow{color:#ff91b0}.project-catalog h3 a{display:inline-block;transition:transform .18s ease,color .18s ease}.project-catalog h3 a:hover,.project-catalog h3 a:focus-visible{transform:translateX(3px)}.project-image-link:focus-visible{outline:3px solid var(--pink);outline-offset:3px}
 
+
+
+/* Ajustes de legibilidad y componentes incorporados */
+.logo-grid{grid-template-columns:repeat(4,minmax(0,1fr))}
+.logo-card{display:flex;flex-direction:column;align-items:center;justify-content:flex-start;gap:14px;text-align:center;min-height:170px;padding:22px}
+.logo-card strong{font:13px/1.35 var(--sans);font-weight:600;color:var(--navy)}
+.logo-placeholder{width:100%;height:74px;border:1px dashed #b9bdc7;background:#f7f6f3;display:grid;place-items:center;color:#9297a3;font:11px var(--mono);letter-spacing:.12em}
+.team-profile{max-width:850px;padding:clamp(28px,5vw,54px);border-left:4px solid var(--pink);background:#fff}
+.team-profile h2{font:clamp(30px,4vw,48px)/1.05 var(--serif);font-weight:400;color:var(--navy);margin:12px 0}
+.team-profile p{font-size:17px;max-width:640px;color:#454b57}
+.stage-grid{margin-bottom:44px}
+@media(max-width:830px){.logo-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:560px){
+ .logo-grid{grid-template-columns:1fr 1fr}
+ .eyebrow,.team-role,.source-note,.history-catalog span,.partner-card,.topline{font-size:14px!important;line-height:1.45}
+ .nav a{min-height:44px;display:flex;align-items:center}
+ .button{min-height:46px;font-size:12px}
+ .card-link{font-size:12px}
+ .section-head{align-items:flex-start;flex-direction:column}
+ .intro-grid,.contact-grid,.split-cards{grid-template-columns:1fr}
+ .featured-project{grid-template-columns:1fr}
+ .featured-image{grid-row:auto}
+ .team-profile p{font-size:16px}
+}
