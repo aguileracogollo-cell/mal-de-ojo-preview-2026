@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Sitemap: https://aguileracogollo-cell.github.io/mal-de-ojo-preview-2026/sitemap.xml
+
